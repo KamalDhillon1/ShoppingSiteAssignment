@@ -4,7 +4,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.automationShoppingSite.BasePackage.ShoppingTestBase;
+import com.automationShopping.BasePackage.ShoppingTestBase;
+import com.automationShoppingSite.Utils.Utils;
 
 public class HomePage extends ShoppingTestBase {
 	
@@ -15,6 +16,7 @@ public class HomePage extends ShoppingTestBase {
 	@FindBy(id="email")
 	WebElement emailInput;
 	
+	
 	@FindBy(id="passwd")
 	WebElement passwordInput;
 	
@@ -22,13 +24,16 @@ public class HomePage extends ShoppingTestBase {
 	WebElement signInBtn;
 	
 	public void enterEmail(String email) {
-		emailInput.sendKeys(email);
+	
+		Utils.sendData(emailInput, email);
 	}
 	public void enterPassword(String password) {
-		passwordInput.sendKeys(password);
+		
+		Utils.sendData(passwordInput, password);
 	}
 	public MyAccountPage clickSignInButton() {
-		signInBtn.click();
+	
+		Utils.clickOnElement(signInBtn);
 		return new MyAccountPage();
 		
 	}

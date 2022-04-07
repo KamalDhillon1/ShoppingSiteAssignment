@@ -1,1 +1,1 @@
-package com.automationShoppingSite.configFile;
+package com.automationShopping.configFile;

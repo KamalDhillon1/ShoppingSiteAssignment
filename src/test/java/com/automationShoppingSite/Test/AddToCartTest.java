@@ -1,5 +1,7 @@
 package com.automationShoppingSite.Test;
 
-public class AddToCartTest {
+import com.automationShopping.BasePackage.ShoppingTestBase;
+
+public class AddToCartTest extends ShoppingTestBase {
 
 }

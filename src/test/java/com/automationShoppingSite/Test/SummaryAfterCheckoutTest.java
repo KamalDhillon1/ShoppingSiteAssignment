@@ -1,5 +1,7 @@
 package com.automationShoppingSite.Test;
 
-public class SummaryAfterCheckoutTest {
+import com.automationShopping.BasePackage.ShoppingTestBase;
+
+public class SummaryAfterCheckoutTest extends ShoppingTestBase {
 
 }

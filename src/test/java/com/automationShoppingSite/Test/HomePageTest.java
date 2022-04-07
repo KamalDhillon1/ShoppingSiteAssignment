@@ -1,6 +1,6 @@
 package com.automationShoppingSite.Test;
 
-import com.automationShoppingSite.BasePackage.ShoppingTestBase;
+import com.automationShopping.BasePackage.ShoppingTestBase;
 
 public class HomePageTest extends ShoppingTestBase {
 

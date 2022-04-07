@@ -5,7 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.automationShoppingSite.BasePackage.ShoppingTestBase;
+import com.automationShopping.BasePackage.ShoppingTestBase;
+import com.automationShoppingSite.Utils.Utils;
 
 public class WomenTabPage extends ShoppingTestBase{
 	public WomenTabPage () {
@@ -22,7 +23,17 @@ public class WomenTabPage extends ShoppingTestBase{
 		return new AddToCart();
 	}
 	
+	
+	 
+		
+		
 	}
+	
+	
+	
+		
+	
+	
 
 	
 	
