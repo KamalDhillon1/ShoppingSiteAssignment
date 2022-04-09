@@ -24,21 +24,21 @@ public class Utils extends ShoppingTestBase {
 	public static int IMPLICIT_WAIT = 10;
 	public static int PAGE_LOAD_TIMEOUT = 30;
 
-	//public static String generateRandomEmail() {
+	public static String generateRandomEmail() {
 
-	//	String email = RandomStringUtils.randomNumeric(3);
+		String email = RandomStringUtils.randomNumeric(3);
 
-		//String emailID = "Manvir" + email + "@gmail.com";
+		String emailID = "kamal" + email + "@gmail.com";
 
-		//return emailID;
+		return emailID;
 
-	//}
+	}
 
 	public static String generateRandomPassword() {
 
 		String randomStringForPassword = RandomStringUtils.randomNumeric(3);
 
-		String password = "Manager@" + randomStringForPassword;
+		String password = "famous@" + randomStringForPassword;
 
 		return password;
 

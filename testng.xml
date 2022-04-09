@@ -16,6 +16,8 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.automationShoppingSite.Test.CartSummaryTest"/>
+      <class name="com.automationShoppingSite.test.MyAccountPageTest"/>
+      <class name="com.automationShoppingSite.test.HomePageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

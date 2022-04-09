@@ -53,7 +53,7 @@ public void verifyUserCanDeleteItem() {
 	String DeletedMsg=cartSummary.getDeletedMessageText();
 	System.out.println("Deleted msg:" +DeletedMsg);
 	
-	Assert.assertEquals(DeletedMsg,prop.getProperty("itemDeletedMsg"),"Message not found" );
+	sf.assertEquals(DeletedMsg,prop.getProperty("itemDeletedMsg"),"Message not found" );
 	
 }
 

@@ -39,7 +39,7 @@ public class ShoppingTestBase {
 	public ShoppingTestBase() {
 		try {
 			prop= new Properties();
-			file= new FileInputStream("C:\\Users\\kkaur\\eclipse-workspace\\ShoppingSite\\src\\main\\java\\com\\automationShopping\\configFile\\configuration.properties");
+			file= new FileInputStream("src//main//java//com//automationShopping//configFile//configuration.properties");
          prop.load(file);
 		} catch (IOException e) {
 

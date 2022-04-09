@@ -11,6 +11,7 @@ public class HomePage extends ShoppingTestBase {
 	
 	public HomePage() {
 		PageFactory.initElements(wd, this);
+		waitForDocumentCompleteState(5);
 	}
 	
 	@FindBy(id="email")
@@ -23,8 +24,10 @@ public class HomePage extends ShoppingTestBase {
 	@FindBy(id="SubmitLogin")
 	WebElement signInBtn;
 	
-	public void enterEmail(String email) {
+	@FindBy(css = "div[class='alert alert-danger']")
+	WebElement authenticationError;
 	
+	public void enterEmail(String email) {
 		Utils.sendData(emailInput, email);
 	}
 	public void enterPassword(String password) {
@@ -37,4 +40,8 @@ public class HomePage extends ShoppingTestBase {
 		return new MyAccountPage();
 		
 	}
+	public String getAuthErrormsgText() {
+		return Utils.getTextFromWebelement(authenticationError);
+	}
+	
 }
