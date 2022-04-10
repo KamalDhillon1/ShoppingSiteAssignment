@@ -57,15 +57,7 @@ public void verifyUserCanDeleteItem() {
 	
 }
 
-@Test
-public void verifyPersonalInfo() {
-personalInfo=myAccount.clickMyPersonalInfo();
-personalInfo.enterCurrentPassword(prop.getProperty("currentPassword"));
-}
-@Test
-public void verifySignOutBtn() {
-	homepage=cartSummary.ClicklogoutBtn();
-}
+
 @AfterMethod
 public void tearDown() {
 	wd.quit();

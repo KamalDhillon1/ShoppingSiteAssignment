@@ -27,6 +27,7 @@ public class HomePage extends ShoppingTestBase {
 	@FindBy(css = "div[class='alert alert-danger']")
 	WebElement authenticationError;
 	
+	
 	public void enterEmail(String email) {
 		Utils.sendData(emailInput, email);
 	}
@@ -37,9 +38,17 @@ public class HomePage extends ShoppingTestBase {
 	public MyAccountPage clickSignInButton() {
 	
 		Utils.clickOnElement(signInBtn);
+	
 		return new MyAccountPage();
-		
 	}
+	public MyAccountPage EnterSignInInfo() {
+		Utils.sendData(emailInput, Utils.generateRandomEmail());
+		Utils.sendData(passwordInput, Utils.generateRandomEmail());
+		Utils.clickOnElement(signInBtn);
+		return new MyAccountPage();
+	}
+		
+	
 	public String getAuthErrormsgText() {
 		return Utils.getTextFromWebelement(authenticationError);
 	}

@@ -12,6 +12,13 @@ public class MyAccountPage extends ShoppingTestBase {
 		PageFactory.initElements(wd, this);
 	}
 
+	@FindBy(css = "#center_column p")
+	WebElement welcomeMessageText;
+
+	public String getTextFromMessage() {
+		return Utils.getTextFromWebelement(welcomeMessageText);
+	}
+
 	@FindBy(className="sf-with-ul")
 	WebElement womenTab;
 

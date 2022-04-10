@@ -16,7 +16,7 @@ public class PersonalInformation extends ShoppingTestBase {
 	@FindBy(id="old_passwd")
 	WebElement currentPaasword;
 	
-public void enterCurrentPassword(String currentpassword) {
+   public void enterCurrentPassword(String currentpassword) {
 		
 		Utils.sendData(currentPaasword, currentpassword);
 	}
